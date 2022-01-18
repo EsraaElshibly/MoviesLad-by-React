@@ -1,0 +1,25 @@
+
+.card {
+    border: 2px solid gray;
+    height: 550px ;
+}
+
+.movie-card{margin-bottom: 80px ;}
+
+i {
+    margin-top: 10px;
+    margin-left: 20px ;
+    cursor: pointer;
+}
+
+li {
+    font-size: 20px ;
+}
+
+span {color: white ; font-weight: bold;}
+
+.lang {
+    font-size: 25px ;
+    color: white;
+    margin: 0px 40px ;
+}
