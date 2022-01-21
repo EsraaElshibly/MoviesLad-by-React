@@ -10,6 +10,12 @@ function AddFav(state = intial , action) {
                 favList: [action.payload , ...state.favList]
             }
 
+        case "REMOVE_FAVOURITE" :
+            return {
+                ...state , 
+                favList: state.favList.filter(i => i !==action.payload)
+            }
+
         default :
             return state
     }

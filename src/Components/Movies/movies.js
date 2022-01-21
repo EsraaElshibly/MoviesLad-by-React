@@ -48,11 +48,8 @@ const Moviees = () => {
 
     return (
       <div className='col-10 mx-auto mt-3 '>
-          <div className='d-flex flex-wrap'>
-            { moviees ? moviees.map((i) => <MovieCard movie={i} key={i.id} />) : null}
-        </div>
 
-        <div className='d-flex justify-content-between'>
+        <div className='d-flex justify-content-between button-parent'>
           <button type='button' className = {`btn-primary ${pageNum < 2 && "opacity-0"}`} onClick={() => {GetPreviousPage()}}>
             Previous Page
           </button>
@@ -60,27 +57,11 @@ const Moviees = () => {
             Next Page
           </button>
         </div>
+        <div className='d-flex flex-wrap'>
+            { moviees ? moviees.map((i) => <MovieCard movie={i} key={i.id} />) : null}
+        </div>
       </div>
     )
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 export default Moviees;
